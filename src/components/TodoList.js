@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Plus, Trash2, Check, Filter, AlertCircle } from 'lucide-react';
 import axios from 'axios';
+import Swal from 'sweetalert2'; // Import SweetAlert2
 import './TodoList.css';
 
 const TodoList = () => {
@@ -10,7 +11,7 @@ const TodoList = () => {
   const [error, setError] = useState('');
 
   // API base URL
-  const API_URL = 'http://localhost:3000/api';;
+  const API_URL = 'http://localhost:3000/api';
 
   // Fetch all tasks
   const fetchTasks = async () => {
@@ -22,9 +23,6 @@ const TodoList = () => {
     }
   };
 
-
-
-  
   // Add new task
   const addTask = async (e) => {
     e.preventDefault();
@@ -37,8 +35,21 @@ const TodoList = () => {
       setNewTask('');
       fetchTasks();
       setError('');
+      // Show success alert
+      Swal.fire({
+        title: 'Task Added!',
+        text: 'Your task has been added successfully.',
+        icon: 'success',
+        confirmButtonText: 'Cool',
+      });
     } catch (err) {
       setError('Failed to add task');
+      Swal.fire({
+        title: 'Error!',
+        text: 'Something went wrong while adding the task.',
+        icon: 'error',
+        confirmButtonText: 'Try Again',
+      });
     }
   };
 
@@ -47,8 +58,21 @@ const TodoList = () => {
     try {
       await axios.put(`${API_URL}/tasks/${id}`, { completed: !completed });
       fetchTasks();
+      // Show success alert
+      Swal.fire({
+        title: 'Task Updated!',
+        text: `Task has been marked as ${completed ? 'incomplete' : 'completed'}.`,
+        icon: 'success',
+        confirmButtonText: 'Great',
+      });
     } catch (err) {
       setError('Failed to update task');
+      Swal.fire({
+        title: 'Error!',
+        text: 'Something went wrong while updating the task.',
+        icon: 'error',
+        confirmButtonText: 'Try Again',
+      });
     }
   };
 
@@ -57,8 +81,21 @@ const TodoList = () => {
     try {
       await axios.delete(`${API_URL}/tasks/${id}`);
       fetchTasks();
+      // Show success alert
+      Swal.fire({
+        title: 'Task Deleted!',
+        text: 'Your task has been deleted successfully.',
+        icon: 'success',
+        confirmButtonText: 'Okay',
+      });
     } catch (err) {
       setError('Failed to delete task');
+      Swal.fire({
+        title: 'Error!',
+        text: 'Something went wrong while deleting the task.',
+        icon: 'error',
+        confirmButtonText: 'Try Again',
+      });
     }
   };
 
