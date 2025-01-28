@@ -11,7 +11,7 @@ const TodoList = () => {
   const [error, setError] = useState('');
 
   // API base URL
-  const API_URL = 'http://localhost:3000/api';
+  const API_URL = 'https://madify-backend.onrender.com/api';
 
   // Fetch all tasks
   const fetchTasks = async () => {
