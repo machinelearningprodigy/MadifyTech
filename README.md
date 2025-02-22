@@ -47,10 +47,7 @@ MadifyTech communicates with a backend hosted on **Render**. Below are the key A
 
 ## 📸 Screenshots
 
-🚀 *[Include screenshots or GIFs of your application in action]*
-
-## 🤝 Contributing
-Feel free to contribute by creating issues or submitting PRs! 💡
+🚀 **![image](https://github.com/user-attachments/assets/d6b3e4a3-9853-4e74-9e20-a1a37e5f3e72)**
 
 ## 📜 License
 This project is licensed under the MIT License. 📝
