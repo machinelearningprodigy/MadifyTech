@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+# MadifyTech 🛠️🚀
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+MadifyTech is a simple and interactive **To-Do List App** 📝 built using **React.js** with an Express.js & MongoDB backend. This project was assigned to me as part of my selection process for **Madify**.
 
-## Available Scripts
+## 🌟 Features
 
-In the project directory, you can run:
+✅ **Add Tasks** – Quickly add new tasks to your to-do list.  
+✅ **Mark as Complete** – Toggle tasks between completed and pending states.  
+✅ **Delete Tasks** – Remove unwanted tasks with a single click.  
+✅ **Filter Tasks** – View all, completed, or pending tasks.  
+✅ **User-Friendly UI** – Clean and responsive design.  
+✅ **SweetAlert2 Integration** – Beautiful pop-up notifications for a great user experience.  
 
-### `npm start`
+## 🛠️ Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Frontend:** React.js ⚛️, Lucide-React Icons 🖼️, SweetAlert2 🎉
+- **Backend:** Node.js 🌿, Express.js 🚀, MongoDB 🍃
+- **API Handling:** Axios 🌐
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🎯 Installation & Setup
 
-### `npm test`
+### 1️⃣ Clone the Repository
+```bash
+ git clone https://github.com/machinelearningprodigy/MadifyTech.git
+ cd MadifyTech
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 2️⃣ Install Dependencies
+```bash
+ npm install
+```
 
-### `npm run build`
+### 3️⃣ Start the Development Server
+```bash
+ npm start
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The app will be available at **http://localhost:3000/** 🌍
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🔗 API Endpoints
+MadifyTech communicates with a backend hosted on **Render**. Below are the key API endpoints:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **GET /tasks** – Fetch all tasks 📝
+- **POST /tasks** – Add a new task ➕
+- **PUT /tasks/:id** – Update task completion ✅
+- **DELETE /tasks/:id** – Remove a task 🗑️
 
-### `npm run eject`
+## 📸 Screenshots
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+🚀 *[Include screenshots or GIFs of your application in action]*
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🤝 Contributing
+Feel free to contribute by creating issues or submitting PRs! 💡
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 📜 License
+This project is licensed under the MIT License. 📝
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 👨‍💻 Author
+Developed by **Rahul Mishra** 🚀
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Enjoy using **MadifyTech**! 🎯🚀
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
